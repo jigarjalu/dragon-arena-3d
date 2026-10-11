@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-game: 'Lilita One', 'Luckiest Guy', cursive, sans-serif;
+    --font-ui: 'Fredoka', 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+.font-game {
+  font-family: var(--font-game);
+  letter-spacing: 0.03em;
+}
+
+.font-ui {
+  font-family: var(--font-ui);
+}
+
+/* Chunky 3D Cartoon Button & Surface Shadows */
+.wood-banner {
+  background: linear-gradient(180deg, #965325 0%, #763b14 45%, #59290a 100%);
+  border: 3px solid #3c1904;
+  box-shadow: 0 6px 0 #281003, 0 10px 14px rgba(0, 0, 0, 0.45), inset 0 2px 0 rgba(255, 255, 255, 0.25);
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.8), 0 0 2px #000;
+}
+
+.wood-banner-border {
+  border-image: linear-gradient(to bottom, #d28a47, #59290a) 1;
+}
+
+.blue-panel {
+  background: linear-gradient(180deg, #1b5394 0%, #113665 100%);
+  border: 3px solid #0b2240;
+  box-shadow: 0 8px 0 #07172b, 0 14px 20px rgba(0, 0, 0, 0.5), inset 0 2px 0 rgba(255, 255, 255, 0.2);
+}
+
+.blue-panel-inner {
+  background: linear-gradient(180deg, #0e2a4f 0%, #081d39 100%);
+  border: 2px solid #06162a;
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Glossy buttons with bottom extrusion */
+.btn-green {
+  background: linear-gradient(180deg, #74df36 0%, #4db818 50%, #308f0a 100%);
+  border: 2px solid #1f6404;
+  box-shadow: 0 5px 0 #184c04, 0 8px 12px rgba(0, 0, 0, 0.35), inset 0 2px 0 rgba(255, 255, 255, 0.45);
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+}
+.btn-green:active {
+  transform: translateY(4px);
+  box-shadow: 0 1px 0 #184c04, 0 2px 4px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.btn-blue {
+  background: linear-gradient(180deg, #3aa0ff 0%, #1e74dc 50%, #0d54a8 100%);
+  border: 2px solid #093770;
+  box-shadow: 0 5px 0 #06264f, 0 8px 12px rgba(0, 0, 0, 0.35), inset 0 2px 0 rgba(255, 255, 255, 0.45);
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+}
+.btn-blue:active {
+  transform: translateY(4px);
+  box-shadow: 0 1px 0 #06264f, 0 2px 4px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.btn-purple {
+  background: linear-gradient(180deg, #bf54ff 0%, #9524dd 50%, #6d0eb0 100%);
+  border: 2px solid #4a0679;
+  box-shadow: 0 5px 0 #340455, 0 8px 12px rgba(0, 0, 0, 0.35), inset 0 2px 0 rgba(255, 255, 255, 0.45);
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+}
+.btn-purple:active {
+  transform: translateY(4px);
+  box-shadow: 0 1px 0 #340455, 0 2px 4px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.btn-gold {
+  background: linear-gradient(180deg, #ffe144 0%, #f6a815 50%, #d87e00 100%);
+  border: 2px solid #945200;
+  box-shadow: 0 5px 0 #683800, 0 8px 12px rgba(0, 0, 0, 0.35), inset 0 2px 0 rgba(255, 255, 255, 0.55);
+  color: #3e1e00;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+}
+.btn-gold:active {
+  transform: translateY(4px);
+  box-shadow: 0 1px 0 #683800, 0 2px 4px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.btn-red {
+  background: linear-gradient(180deg, #ff5757 0%, #dd2222 50%, #ab0f0f 100%);
+  border: 2px solid #6c0606;
+  box-shadow: 0 5px 0 #4a0303, 0 8px 12px rgba(0, 0, 0, 0.35), inset 0 2px 0 rgba(255, 255, 255, 0.45);
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+}
+.btn-red:active {
+  transform: translateY(4px);
+  box-shadow: 0 1px 0 #4a0303, 0 2px 4px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+/* Custom scrollbar for game menus */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(8, 29, 57, 0.8);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb {
+  background: #3474b8;
+  border-radius: 9999px;
+  border: 2px solid #0e2a4f;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5097e8;
+}
